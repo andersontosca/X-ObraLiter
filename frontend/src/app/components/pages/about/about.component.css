@@ -1,0 +1,33 @@
+h3 {
+    font-family: roboto;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-family: roboto;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 2em;
+    font-weight: bold;
+  }
+      
+  p {
+    font-family: roboto;
+    font-size: 25px;
+    text-align: justify;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 1em;
+    font-weight: bold; 
+  }
+
+  a{
+    color: #ff9000;
+  }
+  

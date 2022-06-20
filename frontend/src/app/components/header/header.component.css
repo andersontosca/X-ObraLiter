@@ -1,0 +1,60 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: .5em;  
+} 
+
+.ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand,
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration-color: black;
+  
+}
+
+.brand img {
+  width: 40px;
+  margin-right: 1em;
+}
+
+.brand h2 {
+  transition: 0.4s;
+  color: black;
+}
+
+.brand:hover > h2 { 
+  color: #ff9800;
+}
+
+.links li {
+  margin-right: 1em;
+  list-style: none; 
+  text-align: center; 
+}
+
+.links a {
+  padding: 0.1em 0.3em;
+  transition: 0.4s;
+  color: black;    
+}
+
+.links a:hover {
+  
+  color: #ff9800;
+    
+}
+
+#login a {
+  color: #ff9000;
+}
+
+#login a:hover {
+  background-color: #efefef;
+}

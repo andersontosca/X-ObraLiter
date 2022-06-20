@@ -1,0 +1,30 @@
+.container{
+    text-align: center;    
+}
+
+.card{
+    max-width: 800%;
+    margin-top: auto;
+    padding: 10px;
+}
+
+li{
+    list-style-type: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+li .card:hover{
+    border: 1px solid black;
+}
+ol{
+    padding: 0;
+}
+.errado{
+    color: red;
+    font-weight: bold;
+}
+.certo{
+    color: green;
+    font-weight: bold;
+}
