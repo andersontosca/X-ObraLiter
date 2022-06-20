@@ -20,7 +20,7 @@ export class UserService {
     //let user = new User();
     //user.name = formData.get('name');
 
-    return this.http.post<any>(this.apiUrl +'users/register', formData).toPromise();
+    return this.http.post<any>(this.apiUrl +'users/register', formData).toPromise();   
   }
 
 
