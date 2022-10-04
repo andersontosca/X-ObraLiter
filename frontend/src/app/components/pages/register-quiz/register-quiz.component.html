@@ -1,0 +1,158 @@
+<div class="background">
+    <div class="col">
+        <div class="row">
+            <!--    SIDE BAR   -->
+            <div class="menuLateral">
+                <div class="row flex-nowrap">
+                    <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+                        <app-sidebars></app-sidebars>
+                    </div>
+                    <!--    SIDE BAR   -->
+
+                    <!--    CONTEUDO   -->
+                    <div class="col">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-11">
+                                    <h2>CADASTRAR QUIZZ</h2>
+                                </div>
+                                <div class="col-1 ">
+                                    <app-logoff></app-logoff>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-11">
+
+                                    </div>
+                                </div>
+                                <div class="card text-white bg-dark mb-3">
+                                    <div class="card-header">INFORMAÇÕES DO QUIZZ:</div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <select class="form-select mb-3" [(ngModel)]="quiz2.idAutor"
+                                                        name="autor" id="autor">
+                                                        <option value="" disabled selected>AUTOR</option>
+                                                        <option value={{item.idautor}} *ngFor="let item of getAuthor">
+                                                            {{item.autor}}
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-6">
+                                                    <select class="form-select mb-3" [(ngModel)]="quiz2.idCategoria"
+                                                        name="categoria" id="categoria">
+                                                        <option value="" disabled selected>CATEGORIA</option>
+                                                        <option value={{item.idcategoria}}
+                                                            *ngFor="let item of getCategory">
+                                                            {{item.categoria}}</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <input [(ngModel)]="quiz2.obra" type="text" class="form-control"
+                                                    placeholder="OBRA" name="obra" required />
+                                            </div>
+                                            <div class="mb-3">
+                                                <input [(ngModel)]="quiz2.titulo" type="text" class="form-control"
+                                                    placeholder="TITULO" name="titulo" required />
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <input [(ngModel)]="quiz2.descricao" type="text" class="form-control"
+                                                    placeholder="DESCRIÇÂO" name="descricao" required />
+                                            </div>
+
+
+
+
+                                            <div class="card-header"></div>
+
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    QUESTÕES DO QUIZ: <button class="btn btn-outline-dark">Adicionar
+                                                        Pergunta</button>
+                                                </div>
+
+                                                <div class="col-11">
+                                                    <input [(ngModel)]="question.pergunta" type="text"
+                                                        class="form-control  col-4" id="pergunta"
+                                                        autocomplete="pergunta" placeholder="TEXTO DA PERGUNTA"
+                                                        name="pergunta" required />
+                                                </div>
+
+                                                <div class="container">
+
+                                                    <div class="form-check">
+                                                        <input [(ngModel)]="answer.status" class="form-check-input"
+                                                            type="radio" name="exampleRadios1" id="exampleRadios1"
+                                                            value="true">
+                                                        <label class="form-check-label" for="exampleRadios1">
+                                                            <input [(ngModel)]="answer.resposta" type="text"
+                                                                class="form-control" id="resposta1"
+                                                                placeholder="RESPOSTA 1" name="resposta1" required />
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input [(ngModel)]="answer.status" class="form-check-input"
+                                                            type="radio" name="exampleRadios2" id="exampleRadios2"
+                                                            value="true">
+                                                        <label class="form-check-label" for="exampleRadios1">
+                                                            <input [(ngModel)]="answer.resposta" type="text"
+                                                                class="form-control" id="resposta2"
+                                                                placeholder="RESPOSTA 2" name="resposta2" required />
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input [(ngModel)]="answer.status" class="form-check-input"
+                                                            type="radio" name="exampleRadios3" id="exampleRadios3"
+                                                            value="true">
+                                                        <label class="form-check-label" for="exampleRadios1">
+                                                            <input [(ngModel)]="answer.resposta" type="text"
+                                                                class="form-control" id="resposta2"
+                                                                placeholder="RESPOSTA 3" name="resposta3" required />
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input [(ngModel)]="answer.status" class="form-check-input"
+                                                            type="radio" name="exampleRadios4" id="exampleRadios4"
+                                                            value="true">
+                                                        <label class="form-check-label" for="exampleRadios1">
+                                                            <input type="text" class="form-control" id="resposta4"
+                                                                placeholder="RESPOSTA 4" name="resposta4" required />
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <button class="btn btn-outline-danger mt-2">Remover
+                                                        Pergunta</button>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <div class="btn-group col-3" role="group">
+                                                    <button type="button" class="btn btn-outline-dark"
+                                                        routerLink="/quiz">CANCELAR</button>
+                                                </div>
+                                                <div class="btn-group col-2" role="group">
+                                                    <button class="btn btn-outline-dark" (click)="registerQuiz()">
+                                                        CADASTRAR
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

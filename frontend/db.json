@@ -1,0 +1,174 @@
+{
+    "questions":  [{
+            "questionText": "Qual a origem de Machado de Assis?",
+            "options": [{
+                    "text": "Rio de Janeiro.",
+                    "correct": true
+                },
+                {
+                    "text": "São Paulo.",
+                    "correct": false
+                },
+                {
+                    "text": "Bahia.",
+                    "correct": false
+                },
+                {
+                    "text": "Minas Gerais.",
+                    "correct": false
+                }
+            ],
+            "explanation": "Tem uma área de 1.200 Km²!"
+        },
+        {
+            "questionText": "Em que ano Machado de Assis nasceu?",
+            "options": [{
+                    "text": "1838."
+                },
+                {
+                    "text": "1840."
+                },
+                {
+                    "text": "1837."
+                },
+                {
+                    "text": "1839.",
+                    "correct": true
+                }
+            ],
+            "explanation": "Dom Pedro de Alcântara tem antecipada sua maioridade e se torna o segundo Imperador do Brasil!"
+        },
+        {
+            "questionText": "Em que ano Machado de Assis faleceu?",
+            "options": [{
+                    "text": "1910."
+                },
+                {
+                    "text": "1908.",
+                    "correct": true
+                },
+                {
+                    "text": "1907."
+                },
+                {
+                    "text": "1909."
+                }
+            ],
+            "explanation": "Este foi um ano bissexto!"
+        },
+        {
+            "questionText": "Com quem Machado de Assis de casou?",
+            "options": [{
+                    "text": "Carolina Maria de Jesus."
+                },
+                {
+                    "text": "Carolina Augusta Novais.",
+                    "correct": true
+                },
+                {
+                    "text": "Ana Carolina Gomes Torres."
+                },
+                {
+                    "text": "Carolina do Maranhão."
+                }
+            ],
+            "explanation": "Nasceu na cidade de Porto, Portugal!"
+        },
+        {
+            "questionText": "Qual destas obras NÃO foi escrita por Machado de Assis?",
+            "options": [{
+                    "text": "Auto da Compadecida.",
+                    "correct": true
+                },
+                {
+                    "text": "Dom Casmurro."
+                },
+                {
+                    "text": "O Alienista."
+                },
+                {
+                    "text": "Quincas Borba."
+                }
+            ],
+            "explanation": "Foi escrita por Ariano Suassuna!"
+        },
+        {
+            "questionText": "Machado de Assis nunca frequentou:",
+            "options": [{
+                    "text": "restaurantes."
+                },
+                {
+                    "text": "teatros."
+                },
+                {
+                    "text": "bailes."
+                },
+                {
+                    "text": "universidade.",
+                    "correct": true
+                }
+            ],
+            "explanation": "De família pobre, mal estudou em escolas públicas!"
+        },
+        {
+            "questionText": "Qual foi o último livro publicado em vida por Machado de Assis?",
+            "options": [{
+                    "text": "Memorial de Pedro."
+                },
+                {
+                    "text": "Memorial de Ayres.",
+                    "correct": true
+                },
+                {
+                    "text": "Memorial de Quincas Borba."
+                },
+                {
+                    "text": "Memorial de Baptiste Louis Garnier."
+                }
+            ],
+            "explanation": "Traz uma dedicatória assinada pelo próprio autor!"
+        },
+        {
+            "questionText": "Quanto Machado de Assis recebeu pelo seu primeiro livro de contos?",
+            "options": [{
+                    "text": "200 Réis.",
+                    "correct": true
+                },
+                {
+                    "text": "200 doláres.",
+                    "correct": false
+                },
+                {
+                    "text": "200 gramas de ouro.",
+                    "correct": false
+                },
+                {
+                    "text": "200 gramas de bronze.",
+                    "correct": false
+                }
+            ],
+            "explanation": "Foi publicado em 1870, Contos Fluminenses!"
+        }, 
+        {
+            "questionText": "Machado de Assis era um exímio:",
+            "options": [{
+                    "text": "leitor.",
+                    "correct": true
+                },
+                {
+                    "text": "cineasta.",
+                    "correct": false
+                },
+                {
+                    "text": "ator.",
+                    "correct": false
+                },
+                {
+                    "text": "pintor.",
+                    "correct": false
+                }
+            ],
+            "explanation": "Em consequencia, sua obra foi influenciada pelas leituras que fazia!"
+        }
+    ]
+}

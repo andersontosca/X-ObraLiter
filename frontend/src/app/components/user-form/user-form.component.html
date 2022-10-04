@@ -1,0 +1,169 @@
+<div class="container">
+  <div class="col-md-6 offset-md-3">
+    <form [formGroup]="userForm" #formDir="ngForm" style="text-align: center" class="was-validated">
+      <div class="form-group">
+        <div class="form-floating mb-3">
+          <input type="text" formControlName="name" class="form-control" placeholder="Nome e sobrenome"
+            autocomplete="username" [(ngModel)]="usuario.nome" required /> 
+          <label for="name">Nome Completo</label>
+          <div class="mandatory" *ngIf="name.invalid && formDir.submitted">
+            <p *ngIf="name.errors?.['required']"> *Obrigatorio</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-floating mb-3">
+          <input type="email" formControlName="email" class="form-control" id="username" autocomplete="email"
+            placeholder="nome@exemplo.com.br" [(ngModel)]="usuario.email" required />
+          <label for="floatingInput">E-mail</label>
+          <div class="mandatory" *ngIf="email.invalid && formDir.submitted">
+            <p *ngIf="email.errors?.['required']"> *Obrigatorio</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="form-floating mb-3">
+            <input type="text" formControlName="surName" class="form-control" id="surName"  autocomplete="username"
+              placeholder="Apelido" [(ngModel)]="usuario.apelido" required />
+            <label for="floatingInput">Apelido</label>
+            <div class="mandatory" *ngIf="surName.invalid && formDir.submitted">
+              <p *ngIf="surName.errors?.['required']"> *Obrigatorio</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="form-floating mb-3">
+            <select class="form-select mb-3" formControlName="uf" id="uf" aria-label=".form-select-lg example"
+              [(ngModel)]="usuario.uf" required>
+              <option value="" disabled selected>Escolha uma UF</option>
+              <option value="AC">AC</option>
+              <option value="AL">AL</option>
+              <option value="AP">AP</option>
+              <option value="AM">AM</option>
+              <option value="BA">BA</option>
+              <option value="CE">CE</option>
+              <option value="DF">DF</option>
+              <option value="ES">ES</option>
+              <option value="GO">GO</option>
+              <option value="MA">MA</option>
+              <option value="MT">MT</option>
+              <option value="MS">MS</option>
+              <option value="MG">MG</option>
+              <option value="PA">PA</option>
+              <option value="PB">PB</option>
+              <option value="PR">PR</option>
+              <option value="PE">PE</option>
+              <option value="PI">PI</option>
+              <option value="RJ">RJ</option>
+              <option value="RN">RN</option>
+              <option value="RO">RO</option>
+              <option value="RR">RR</option>
+              <option value="SC">SC</option>
+              <option value="SP">SP</option>
+              <option value="SE">SE</option>
+              <option value="TO">TO</option>
+            </select>
+          </div>
+          <div class="mandatory" *ngIf="uf.invalid && formDir.submitted">
+            <p *ngIf="uf.errors?.['required']"> *Obrigatorio</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-floating mb-3">
+          <input type="password" formControlName="password" class="form-control" placeholder="password"
+            autocomplete="new-password" id="new-password" [(ngModel)]="usuario.senha" required />
+          <label for="floatingPassword">Senha</label>
+
+          <div class="mandatory" *ngIf="password.invalid && formDir.submitted">
+            <p *ngIf="password.errors?.['required']"> *Obrigatorio</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!--  <div class="form-group">
+        <div class="form-floating mb-3">
+          <input type="password" formControlName="confirmPassword" class="form-control" autocomplete="current-password"
+            id="current-password" placeholder="confirmPassword" [(ngModel)]="usuario.confirmPassword" required />
+          <label for="floatingPassword">Confirme a senha</label>
+          <div class="mandatory" *ngIf="confirmPassword.invalid && formDir.submitted">
+            <p *ngIf="confirmPassword.errors?.['required']"> *Obrigatorio</p>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-1">
+            <input class="form-check-input" type="checkbox" value="true" id="status" formControlName="status"
+              [(ngModel)]="usuario.status" required>
+          </div>
+          <div class="col-6">
+            <a type="text" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              TERMOS E CONDIÇÕES DE USO!!</a>
+
+          </div>
+          <div class="col-3">
+            <div class="mandatory" *ngIf="status.invalid && formDir.submitted">
+              <p *ngIf="status.errors?.['required']"> *Obrigatorio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-dialog modal-lg">
+                Termos e condições de uso:
+              </h5>
+            </div>
+            <div class="modal-body" style="text-align: justify">
+              <p>
+                Aceitando este termo você concorda em não adicionar fotos de cunho
+                obseceno ou diferente de suas características ou preferencias
+                pesssoais, colocando algo que violando os principios
+                administrativos seu cadastro poderá ser INATIVADO definitivamente
+                pelos administradores do X-ObraLiter.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ciente</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIM da Modal -->
+
+      <div class="row">
+        <div class="col 12">
+          <div class="btn-group col-3" role="group">
+
+            <a routerLink="/login">
+              <button type="button" class="btn btn-outline-dark">
+                CANCELAR
+              </button>
+            </a>
+
+          </div>
+
+          <div class="btn-group col-2" role="group">
+
+           
+              <button class="btn btn-outline-dark" (click)="adicionar()">
+                 CADASTRAR</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>

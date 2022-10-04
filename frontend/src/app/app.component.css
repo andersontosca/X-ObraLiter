@@ -1,0 +1,11 @@
+.init {
+  min-height: 75vh; 
+  color: black; 
+}
+
+.background {
+  /*background-image: url("../assets/imagens/fundo.png"); */ 
+  background-repeat: no-repeat;
+  background-position: center;   
+}
+

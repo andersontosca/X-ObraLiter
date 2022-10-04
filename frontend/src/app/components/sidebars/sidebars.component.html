@@ -1,0 +1,47 @@
+<div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2  min-vh-100">
+    <ul class="nav nav-pills flex-column mb-auto">
+
+        <li class="nav-item">
+            <a routerLink="/welcome" class="nav-link " aria-current="page">
+
+                Início
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a routerLink="/author" class="nav-link " aria-current="page">
+
+                Autores
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a routerLink="/../category" class="nav-link " aria-current="page">
+
+                Categorias
+            </a>
+        </li>
+
+
+        <li class="nav-item">
+            <a routerLink="/quiz" class="nav-link " aria-current="page">
+
+                Quizzes
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a routerLink="/emblemas" class="nav-link " aria-current="page">
+
+                Emblemas
+            </a>
+        </li>
+
+        <li *ngIf="perfil" class="nav-item">
+            <a routerLink="/user" class="nav-link " aria-current="page">
+
+                Usuários
+            </a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,74 @@
+<div class="background">
+    <div class="col">
+        <div class="row">
+            <!--    SIDE BAR   -->
+            <div class="menuLateral">
+                <div class="row flex-nowrap">
+                    <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+                        <app-sidebars></app-sidebars>
+                    </div>
+                    <!--    SIDE BAR   -->
+                    <!--    CONTEUDO   -->
+                    <div class="col">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-11">
+                                    <h2>USUÁRIOS CADASTRADOS</h2>
+                                </div>
+                                <div class="col-1 ">
+                                    <app-logoff></app-logoff>
+                                </div>
+                                <div class="row">
+                                    <div class="col-11">
+                                        
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">ID</th>
+                                                <th scope="col">Nome</th>
+                                                <th scope="col">E-mail</th>
+                                                <th scope="col">Apelido</th>
+                                                <th scope="col">UF</th>
+                                                <th scope="col">Perfil</th>
+                                                <th scope="col">Pontos</th>
+                                                <th scope="col">Status</th>
+                                                <th scope="col">Alt Status</th>
+                                                <th scope="col">Alt Perfil</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor="let usuario of getUser">
+                                                <td>{{usuario.idusuario}}</td>
+                                                <td>{{usuario.nome}} </td>
+                                                <td>{{usuario.email}} </td>
+                                                <td>{{usuario.apelido}} </td>
+                                                <td>{{usuario.uf}} </td>
+                                                <td>{{usuario.perfil}} </td>
+                                                <td>{{usuario.pontos}} </td>
+                                                <td>{{usuario.status}} </td>
+                                                <td> <button type="button" class="btn btn-outline-warning"
+                                                        (click)="alterarStatus(usuario.idusuario)">*</button></td>
+                                                <td> <button type="button" class="btn btn-outline-warning"
+                                                        (click)="alterarPerfil(usuario.idusuario)">*</button></td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--inserir paginação aqui-->
+                                <h1>Paginação:</h1>
+                                <h1>◀ 1 2 3 ▶</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM container-fluid-->
+                </div>
+                <!--FIM class="row"-->
+            </div>
+            <!--class="col" -->
+        </div>
+        <!--FIM class="background"-->
+    </div>

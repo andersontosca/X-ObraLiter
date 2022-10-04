@@ -1,0 +1,107 @@
+
+*{
+  color: grey;  
+}
+
+button{
+  margin-top: 1em;
+}
+input{
+  margin-top: 1em;
+  margin-left: 1em;
+  font-weight: bold;
+}
+
+
+h2 {  
+  font-family: roboto;
+  font-size: 2em ;
+  text-align: center;  
+  font-weight: bold;
+}
+
+p {  
+  font-family: roboto;
+  font-size: 0.5em;
+  text-align: center;      
+  font-weight: bold;
+}
+
+
+h1 {  
+    font-family: roboto;
+    font-size: 20px;
+    text-align: center;      
+    font-weight: bold;
+  }
+
+  .background{
+    background-color: black;  
+    margin-left: 0.1em;
+    margin-right: 1.6em;
+    margin-top: 1em 0.1em;
+    padding: 0 0;
+
+  }  
+  
+  .a {
+    text-align: center;
+    text-shadow: 5px; 
+  }
+  
+
+  .menuLateral {  
+    font-family: sans-serif;
+    color: #ff9000;
+    margin-left: 25px; 
+    margin-top: 0.5em
+          
+  }
+  
+  .menuLateral a {
+    transition: 0.4s;
+    color: grey;
+    
+  }
+
+  .menuLateral p {
+    margin-top: 5px;
+    text-align: justify;
+  } 
+  
+  .menuLateral a:hover {
+    color: #ff9800;
+  }
+  
+.container{
+  margin-top: 0 0;
+  padding-top: 0 0;
+}
+  
+  .brand,
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration-color: black;  
+  }
+  
+  .brand img {
+    width: 40px;
+    margin-right: 1em;
+  }
+button{
+  align-items: center;  
+}
+  
+  .brand h2 {
+    transition: 0.4s;
+    color: #ff9800;
+  }
+ 
+
+  
+  
+
+
+  

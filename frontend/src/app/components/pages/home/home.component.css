@@ -1,0 +1,57 @@
+
+h1 {
+  font-family: roboto;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 50px;  
+  font-weight: bold;
+}
+
+h2 {
+  font-family: roboto;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 5px;  
+  margin-top: 0px;   
+}
+
+.menuLateral {
+  font-family: sans-serif;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+.menuLateral a {
+  transition: 0.4s;
+  color: black; 
+} 
+
+.menuLateral a:hover {
+  color: #ff9800;
+}
+
+.menuLateral p {
+  margin-top: 550px;
+  text-align: justify;
+} 
+
+.rota {
+  color: #ff9000;
+}
+.brand,
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration-color: black;  
+}
+
+.brand img {
+  width: 40px;
+  margin-right: 1em;
+}
+
+.brand h2 {
+  transition: 0.4s;
+  color: #ff9800;
+}

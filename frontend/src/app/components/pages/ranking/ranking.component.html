@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2>X-ObraLiter</h2>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="w-100">
+                    <h1>RANKING GERAL:</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <!--
+                        <th scope="col">ID</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">E-mail</th>
+                        -->
+                        <th scope="col">Apelido</th>
+                        <!--
+                        <th scope="col">UF</th>
+                        <th scope="col">Perfil</th>
+
+                       
+                        <th scope="col">Status</th>
+                        <th scope="col">Alterar Status</th>
+                        -->
+                        <th scope="col">Pontos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let usuario of getUser">
+                        <!--
+                        <td>{{usuario.idusuario}}</td>
+                        <td>{{usuario.nome}} </td>
+                        <td>{{usuario.email}} </td>
+                        -->
+                        <td>{{usuario.apelido}} </td>
+                        <!--<td>{{usuario.uf}} </td> 
+                        <td>{{usuario.perfil}} </td>
+                        <td>{{usuario.status}} </td>
+                        -->
+                        <td>{{usuario.pontos}} </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--inserir paginação aqui-->
+        <h1>Paginação:</h1>
+        <h1>◀ 1 2 3 ▶</h1>
+    </div>
+</div>

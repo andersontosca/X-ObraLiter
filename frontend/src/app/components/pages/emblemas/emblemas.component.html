@@ -1,0 +1,162 @@
+<div class="background">
+    <div class="col">
+        <div class="row">
+            <!--    SIDE BAR   -->
+            <div class="menuLateral">
+                <div class="row flex-nowrap">
+                    <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+                        <app-sidebars></app-sidebars>
+                    </div>
+                    <!--    SIDE BAR   -->
+
+                    <!--    CONTEUDO   -->
+                    <div class="col">
+                        <div *ngIf="perfil" class="container">
+                            <div class="row">
+                                <div class="col-2 ">
+                                    <a routerLink="/register-emblemas">
+                                        <button class="btn btn-outline-primary">ADICIONAR</button>
+                                    </a>
+                                </div>
+                                <div class="col-8">
+                                    <h2>EMBREMAS</h2>
+                                </div>
+                                <div class="col-2">
+                                    <app-logoff></app-logoff>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">ID</th>
+                                                    <th scope="col">Foto</th>
+                                                    <th scope="col">Título</th>
+                                                    <th scope="col">Descrição</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col">Pontuação</th>
+                                                    <th scope="col">Alterar</th>
+                                                    <th scope="col">Excluir</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>emblema.id</td>
+                                                    <td>emblema.foto</td>
+                                                    <td>emblema.titulo</td>
+                                                    <td>emblema.descricao</td>
+                                                    <td>emblema.status</td>
+                                                    <td>emblema.pontos</td>
+                                                    <td><button type="button" class="btn btn-outline-warning">*</button>
+                                                    </td>
+                                                    <td><button type="button" class="btn btn-outline-danger">-</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!--inserir paginação aqui-->
+                                <h1>Paginação:</h1>
+                                <h1>◀ 1 2 3 ▶</h1>
+                            </div>
+                        </div>
+                        <!--usuario comun-->
+                        <div *ngIf="perfilUser" class="container">
+                            <div class="row">
+                                <div class="col-11">
+                                    <h2>MEUS EMBLEMAS</h2>
+                                </div>
+                                <div *ngIf="mensagem" class="col-11">
+                                    <h1>No momento você ainda não possui embremas!</h1>
+                                </div>
+                                <div class="col-1 ">
+                                    <app-logoff></app-logoff>
+                                </div>
+
+                                <div class="pt-5">
+                                    <div class="row">
+                                        <div *ngIf="ouro" class="col-sm-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">OURO</h5>
+                                                    <img class="card-img-top"
+                                                        src="../../../../assets/imagens/1_OURO.gif"
+                                                        alt="Imagem de capa do card" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div *ngIf="prata" class="col-sm-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">PRATA</h5>
+                                                    <img class="card-img-top"
+                                                        src="../../../../assets/imagens/2_PRATA.gif"
+                                                        alt="Imagem de capa do card" />
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div *ngIf="bronze" class="col-sm-4">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">BRONZE</h5>
+                                                    <img class="card-img-top"
+                                                        src="../../../../assets/imagens/3_BRONZE.gif"
+                                                        alt="Imagem de capa do card" />
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--FIM container-fluid-->
+                </div>
+                <!--FIM class="row"-->
+            </div>
+            <!--class="col" -->
+        </div>
+        <!--FIM class="background"-->
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-dialog modal-lg">
+                        Detalhes da CATEGORIA:
+                    </h5>
+                </div>
+                <div class="modal-body" style="text-align: justify">
+                    <p>
+                        Esta categoria destina-se a falar das obras dos autores.
+                    </p>
+                    <p>
+                        Esta categoria destina-se a falar das obras dos autores.
+                    </p>
+
+                    <p>
+                        Esta categoria destina-se a falar das obras dos autores.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ciente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIM da Modal -->
